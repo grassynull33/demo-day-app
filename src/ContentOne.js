@@ -97,28 +97,32 @@ class ContentOne extends Component {
 
         <h1>Skillz That Killz</h1>
 
-        <button className="btn btn-default" name="fundamentals" onClick={this.handleClick}>Fundamentals</button>
-        <button className="btn btn-default" name="frontend" onClick={this.handleClick}>Front-end</button>
-        <button className="btn btn-default" name="design" onClick={this.handleClick}>Design</button>
-        <button className="btn btn-default" name="backend" onClick={this.handleClick}>Back-end</button>
-        <button className="btn btn-default" name="database" onClick={this.handleClick}>Database</button>
-        <button className="btn btn-default" name="misc" onClick={this.handleClick}>Miscellaneous</button>
-        <button className="btn btn-default" name="all" onClick={this.handleClick}>Show All</button>
+        <div className="btn-group" role="group" aria-label="...">
+          <button className="btn btn-default" name="fundamentals" onClick={this.handleClick}>Fundamentals</button>
+          <button className="btn btn-default" name="frontend" onClick={this.handleClick}>Front-end</button>
+          <button className="btn btn-default" name="design" onClick={this.handleClick}>Design</button>
+          <button className="btn btn-default" name="backend" onClick={this.handleClick}>Back-end</button>
+          <button className="btn btn-default" name="database" onClick={this.handleClick}>Database</button>
+          <button className="btn btn-default" name="misc" onClick={this.handleClick}>Miscellaneous</button>
+          <button className="btn btn-default" name="all" onClick={this.handleClick}>Show All</button>
+        </div>
 
-        {
-          this.state.skills
-            .filter((i) =>
-              (i.category === "Fundamentals" && this.state.showFundamentals) ||
-              (i.category === "Front-end" && this.state.showFrontend) ||
-              (i.category === "Design" && this.state.showDesign) ||
-              (i.category === "Back-end" && this.state.showBackend) ||
-              (i.category === "Database" && this.state.showDatabase) ||
-              (i.category === "Miscellaneous" && this.state.showMisc)
-            )
-            .map((i) =>
-              <Skill key={i.skill} skill={i.skill} version={i.version} category={i.category} starred={i.starred} />
-            )
-        }
+        <div className="skills-container">
+          {
+            this.state.skills
+              .filter((i) =>
+                (i.category === "Fundamentals" && this.state.showFundamentals) ||
+                (i.category === "Front-end" && this.state.showFrontend) ||
+                (i.category === "Design" && this.state.showDesign) ||
+                (i.category === "Back-end" && this.state.showBackend) ||
+                (i.category === "Database" && this.state.showDatabase) ||
+                (i.category === "Miscellaneous" && this.state.showMisc)
+              )
+              .map((i) =>
+                <Skill key={i.skill} skill={i.skill} version={i.version} category={i.category} starred={i.starred} />
+              )
+          }
+        </div>
       </div>
     );
   }

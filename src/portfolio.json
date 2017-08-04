@@ -4,8 +4,7 @@
       "title": "JoinCoin",
       "desc": "A beginner-friendly cryptocurrency resource made with React. This application features an updated list of cryptocurrencies and also a profit calculator to give users a taste of the future of money. Launching later this year.",
       "type": [
-        "Bootcamp Project",
-        "Side Hustle"
+        "Bootcamp Project/Side Hustle"
       ],
       "tech": [
         "React",
@@ -45,19 +44,8 @@
       "link": "https://nathanmiller9.github.io/project1/"
     },
     {
-      "title": "Portfolio",
-      "desc": "Personal portfolio website. Work in progress.",
-      "type": [
-        "Portfolio"
-      ],
-      "tech": [
-        "Custom"
-      ],
-      "link": "http://yoon.work/"
-    },
-    {
-      "title": "MCGE Website",
-      "desc": "Freelance work for a nonprofit that specializes in assisting low-income college students with finding a job after graduation. Work in progress.",
+      "title": "MCGE",
+      "desc": "Freelance website for a nonprofit that specializes in assisting low-income college students with finding a job after graduation. Work in progress.",
       "type": [
         "Freelance"
       ],
@@ -67,8 +55,8 @@
       "link": "https://yoonslee.github.io/mcge-2/"
     },
     {
-      "title": "Peer Action 4 Change Website",
-      "desc": "Freelance work for a nonprofit that is funded in part by LA County Department of Health. PA4C's mission is to make the world a better place for mental health clients. They throw conferences to aid in recovery and job fairs to connect the mental health community with potential employers. Work in progress.",
+      "title": "Peer Action 4 Change",
+      "desc": "Freelance website for a nonprofit that is funded in part by LA County Department of Health. PA4C's mission is to make the world a better place for mental health clients. Work in progress.",
       "type": [
         "Freelance"
       ],
@@ -79,7 +67,7 @@
     },
     {
       "title": "Poke Me",
-      "desc": "Menu for poke restaurant chain",
+      "desc": "Menu for LA-based poke restaurant.",
       "type": [
         "Graphic Design"
       ],
@@ -90,7 +78,7 @@
     },
     {
       "title": "Bookie Mobile App",
-      "desc": "Flyer for mobile app (no longer exists)",
+      "desc": "Flyer for mobile app (no longer exists).",
       "type": [
         "Graphic Design"
       ],

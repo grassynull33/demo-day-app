@@ -37,6 +37,12 @@
       "starred": false
     },
     {
+      "skill": "Responsive/Mobile-first Design",
+      "version": null,
+      "category": "Design",
+      "starred": false
+    },
+    {
       "skill": "Adobe Photoshop",
       "version": "CC",
       "category": "Design",
@@ -52,12 +58,6 @@
       "skill": "Express",
       "version": null,
       "category": "Back-end",
-      "starred": false
-    },
-    {
-      "skill": "Handlebars.js",
-      "version": null,
-      "category": "Miscellaneous",
       "starred": false
     },
     {
@@ -86,6 +86,12 @@
     },
     {
       "skill": "GitHub",
+      "version": null,
+      "category": "Miscellaneous",
+      "starred": false
+    },
+    {
+      "skill": "Handlebars.js",
       "version": null,
       "category": "Miscellaneous",
       "starred": false

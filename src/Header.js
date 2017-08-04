@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Clock from './Clock';
+import Bitcoin from './Bitcoin';
 
 class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <h1 className="app-title">#DEMODAY<span className="app-version">v1.3 alpha 23</span></h1>
+        <h1 className="app-title">Welcome to Demo Day!</h1>
         <Clock />
+        <Bitcoin />
       </div>
     );
   }

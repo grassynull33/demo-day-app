@@ -36,7 +36,7 @@
 
 .Header {
   padding: 30px;
-  height: 300px;
+  height: 200px;
   width: 100%;
   background: #004e92; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #004e92, #000428); /* For Safari 5.1 to 6.0 */
@@ -45,14 +45,24 @@
   background: linear-gradient(to bottom right, #004e92, #000428); /* Standard syntax */
 }
 
-.Clock {
+.app-title {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.time {
+  font-size: 5em;
+  color: #fff;
+}
+
+.countdown {
   font-size: 5em;
   color: #fff;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 40px;
 }
 
 @keyframes App-logo-spin {
@@ -62,6 +72,7 @@
 
 .col-half {
   width: 50vw;
+  /*overflow: hidden;*/
 }
 
 .header-row {
@@ -74,10 +85,91 @@
 }
 
 .footer-row {
-
+  background-color: #000;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
 }
 
 .Footer {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Skill {
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding: 0.67em 1em;
+}
+
+.skill_name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.skill_version {
+  font-size: 1.05em;
+  margin-left: 0.3em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.skill_Fundamentals {
+  border: 2px solid;
+  border-color: red;
+}
+
+.skill_Front-end {
+  border: 2px solid;
+  border-color: green;
+}
+
+.skill_Design {
+  border: 2px solid;
+  border-color: blue;
+}
+
+.skill_Back-end {
+  border: 2px solid;
+  border-color: orange;
+}
+
+.skill_Database {
+  border: 2px solid;
+  border-color: purple;
+}
+
+.skill_Miscellaneous {
+  border: 2px solid;
+  border-color: gray;
+}
+
+.starred-icon {
+  margin-left: 0.7em;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-container {
 /*  display: flex;
-  align-items: center;*/
+  flex-wrap: wrap;*/
+}
+
+/*.piece_title {
+  font-size: 2.5em;
+  text-align: center;
+}*/
+
+.Piece {
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  height: 75px;
 }

@@ -34,8 +34,8 @@ class Clock extends Component {
 
     return (
       <div className="Clock">
-        {this.state.date.toLocaleTimeString()}<br />
-        {s}
+        <span className="time">{this.state.date.toLocaleTimeString()}</span>
+        <span className="countdown">{s}</span>
       </div>
     );
   }
