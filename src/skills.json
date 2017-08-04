@@ -1,0 +1,100 @@
+{
+  "skills": [
+    {
+      "skill": "HTML",
+      "version": "5",
+      "category": "Fundamentals",
+      "starred": true
+    },
+    {
+      "skill": "CSS",
+      "version": "3",
+      "category": "Fundamentals",
+      "starred": true
+    },
+    {
+      "skill": "JavaScript",
+      "version": "ES6",
+      "category": "Fundamentals",
+      "starred": true
+    },
+    {
+      "skill": "React",
+      "version": "15.6",
+      "category": "Front-end",
+      "starred": true
+    },
+    {
+      "skill": "jQuery",
+      "version": null,
+      "category": "Front-end",
+      "starred": false
+    },
+    {
+      "skill": "Bootstrap",
+      "version": "4",
+      "category": "Front-end",
+      "starred": false
+    },
+    {
+      "skill": "Adobe Photoshop",
+      "version": "CC",
+      "category": "Design",
+      "starred": false
+    },
+    {
+      "skill": "Node.js",
+      "version": null,
+      "category": "Back-end",
+      "starred": false
+    },
+    {
+      "skill": "Express",
+      "version": null,
+      "category": "Back-end",
+      "starred": false
+    },
+    {
+      "skill": "Handlebars.js",
+      "version": null,
+      "category": "Miscellaneous",
+      "starred": false
+    },
+    {
+      "skill": "MongoDB",
+      "version": null,
+      "category": "Database",
+      "starred": false
+    },
+    {
+      "skill": "MySQL",
+      "version": null,
+      "category": "Database",
+      "starred": false
+    },
+    {
+      "skill": "Firebase",
+      "version": null,
+      "category": "Database",
+      "starred": false
+    },
+    {
+      "skill": "git",
+      "version": null,
+      "category": "Miscellaneous",
+      "starred": false
+    },
+    {
+      "skill": "GitHub",
+      "version": null,
+      "category": "Miscellaneous",
+      "starred": false
+    },
+    {
+      "skill": "WordPress",
+      "version": "4.8",
+      "category": "Miscellaneous",
+      "starred": false
+    }
+  ]
+}

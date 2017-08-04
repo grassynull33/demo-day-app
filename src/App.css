@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -21,4 +21,63 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+*/
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  /*border: 30px solid #fff;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  padding: 30px;
+  height: 300px;
+  width: 100%;
+  background: #004e92; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #004e92, #000428); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #004e92, #000428); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #004e92, #000428); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #004e92, #000428); /* Standard syntax */
+}
+
+.Clock {
+  font-size: 5em;
+  color: #fff;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.col-half {
+  width: 50vw;
+}
+
+.header-row {
+
+}
+
+.content-row {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.footer-row {
+
+}
+
+.Footer {
+/*  display: flex;
+  align-items: center;*/
 }

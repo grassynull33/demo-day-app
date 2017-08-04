@@ -1,0 +1,103 @@
+{
+  "portfolio": [
+    {
+      "title": "JoinCoin",
+      "desc": "A beginner-friendly cryptocurrency resource made with React. This application features an updated list of cryptocurrencies and also a profit calculator to give users a taste of the future of money. Launching later this year.",
+      "type": [
+        "Bootcamp Project",
+        "Side Hustle"
+      ],
+      "tech": [
+        "React",
+        "MongoDB",
+        "Node.js",
+        "Express"
+      ],
+      "link": "https://joincoin.herokuapp.com/coins"
+    },
+    {
+      "title": "Equilibrium",
+      "desc": "A companion web app for a Virtual Reality item-pickup game made by project partner, Brandon Chang. The game was made with Unity and integrates MySQL and Firebase connections to interact with the web app.",
+      "type": [
+        "Bootcamp Project"
+      ],
+      "tech": [
+        "Unity",
+        "MySQL",
+        "Firebase",
+        "Node.js",
+        "Express"
+      ],
+      "link": "https://equilibrium-game.herokuapp.com/"
+    },
+    {
+      "title": "Mixtape",
+      "desc": "A music-focused web app that allows users to create mixtapes of YouTube videos to share with their friends or loved ones. Comments and GIFs can be added to each video in the mixtape to add a personal touch.",
+      "type": [
+        "Bootcamp Project"
+      ],
+      "tech": [
+        "YouTube API",
+        "Giphy API",
+        "Firebase",
+        "JavaScript"
+      ],
+      "link": "https://nathanmiller9.github.io/project1/"
+    },
+    {
+      "title": "Portfolio",
+      "desc": "Personal portfolio website. Work in progress.",
+      "type": [
+        "Portfolio"
+      ],
+      "tech": [
+        "Custom"
+      ],
+      "link": "http://yoon.work/"
+    },
+    {
+      "title": "MCGE Website",
+      "desc": "Freelance work for a nonprofit that specializes in assisting low-income college students with finding a job after graduation. Work in progress.",
+      "type": [
+        "Freelance"
+      ],
+      "tech": [
+        "Wordpress"
+      ],
+      "link": "https://yoonslee.github.io/mcge-2/"
+    },
+    {
+      "title": "Peer Action 4 Change Website",
+      "desc": "Freelance work for a nonprofit that is funded in part by LA County Department of Health. PA4C's mission is to make the world a better place for mental health clients. They throw conferences to aid in recovery and job fairs to connect the mental health community with potential employers. Work in progress.",
+      "type": [
+        "Freelance"
+      ],
+      "tech": [
+        "Wordpress"
+      ],
+      "link": "https://yoonslee.github.io/pa4c-wp-static/"
+    },
+    {
+      "title": "Poke Me",
+      "desc": "Menu for poke restaurant chain",
+      "type": [
+        "Graphic Design"
+      ],
+      "tech": [
+        "Photoshop"
+      ],
+      "link": "https://drive.google.com/drive/folders/0B77nwseOWZDSeTZRYm5KWGxFOTQ?usp=sharing"
+    },
+    {
+      "title": "Bookie Mobile App",
+      "desc": "Flyer for mobile app (no longer exists)",
+      "type": [
+        "Graphic Design"
+      ],
+      "tech": [
+        "Photoshop"
+      ],
+      "link": "https://drive.google.com/drive/folders/0B77nwseOWZDSeTZRYm5KWGxFOTQ?usp=sharing"
+    }
+  ]
+}
