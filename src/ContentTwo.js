@@ -13,7 +13,7 @@ class ContentTwo extends Component {
   render() {
     return (
       <div className="ContentTwo">
-        <h1>Portfolio</h1>
+        <h1>Portfolio<small className="filter-text">hover to see description</small></h1>
         <div className="portfolio-container">
           {
             this.state.portfolio

@@ -88,14 +88,13 @@ class ContentOne extends Component {
     return (
       <div className="ContentOne">
         <h1>Yoon Lee</h1>
-        <h2>
-          I am a Front-end Web Developer / JavaScript Junkie<br />
-          with a design &amp; data analysis background.<br />
-          <br />
-          I like to build web apps.
-        </h2>
+        <p className="short-desc">
+          I am a front-end web developer / JavaScript junkie<br />
+          with a design &amp; data analysis background.{/* <br />
+          <span className="last-line">I like to build web apps.</span> */}
+        </p>
 
-        <h1>Skillz That Killz</h1>
+        <h1>Skills<small className="filter-text">filter by category</small></h1>
 
         <div className="btn-group" role="group" aria-label="...">
           <button className="btn btn-default" name="fundamentals" onClick={this.handleClick}>Fundamentals</button>

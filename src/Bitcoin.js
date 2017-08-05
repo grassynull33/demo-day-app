@@ -31,12 +31,11 @@ class Bitcoin extends Component {
   render() {
     return (
       <div className="Bitcoin">
-        <h1>Bitcoin (BTC)</h1>
-        <h2>${this.state.btcPrice}</h2>
-        <h1>Bitcoin Cash (BCH)</h1>
-        <h2>${this.state.bchPrice}</h2>
-        <button className="btn btn-primary" onClick={this.getCoinData}>Refresh</button>
-        <small>API updates only once every five minutes, so don't smash the button</small>
+        <h1>Bitcoin (BTC) ${this.state.btcPrice}</h1>
+        <h1>Bitcoin Cash (BCH) ${this.state.bchPrice}</h1>
+        {/* <button className="btn btn-primary" onClick={this.getCoinData}>Refresh</button>
+        <small>API updates only once every five minutes, so don't smash the button</small> */}
+
       </div>
     );
   }

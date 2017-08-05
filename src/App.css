@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 /*.App {
   text-align: center;
 }
@@ -34,9 +36,12 @@
   flex-direction: column;
 }
 
+.Bitcoin {
+  color: #fff;
+}
+
 .Header {
-  padding: 30px;
-  height: 200px;
+  height: 230px;
   width: 100%;
   background: #004e92; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #004e92, #000428); /* For Safari 5.1 to 6.0 */
@@ -48,21 +53,76 @@
 .app-title {
   color: #fff;
   text-transform: uppercase;
+  font-size: 3.4em;
 }
 
-.time {
-  font-size: 5em;
-  color: #fff;
+.time-container {
+  font-size: 3em;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding: 0.4em 0.6em 0.2em 0.6em;
+  color: #000;
+  border: 4px solid #000;
 }
 
-.countdown {
-  font-size: 5em;
-  color: #fff;
+.countdown-container {
+  font-size: 3em;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding: 0.4em 0.6em 0.2em 0.6em;
+  margin-left: 1em;
+  color: #000;
+  border: 4px solid #000;
+}
+
+.made-with {
+  z-index: 10;
+  position: fixed;
+  font-size: 2.4em;
+  bottom: 30px;
+}
+
+.made-with a {
+  color: #89e9f0;
+}
+
+.resume-header {
+  font-size: 2em;
+}
+
+.btn-primary, .btn-success {
+  text-transform: uppercase;
+}
+
+.btn-success {
+  width: 100%;
+}
+
+.time, .countdown {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.time-title {
+  font-size: 0.4em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.countdown-title {
+  font-size: 0.4em;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40px;
+  height: 400px;
+  position: absolute;
+  bottom: -200px;
+  left: -100px;
+  opacity: 0.3;
+  z-index: 0;
+  /*float: left;*/
 }
 
 @keyframes App-logo-spin {
@@ -73,10 +133,56 @@
 .col-half {
   width: 50vw;
   /*overflow: hidden;*/
+  padding: 50px;
+}
+
+/* System Fonts as used by GitHub */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.Clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-col {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 3em;
+  font-style: italic;
+  letter-spacing: -0.03em;
+  color: #000;
+}
+
+.col-half-one {
+  padding-right: 25px;
+}
+
+.col-half-two {
+  padding-left: 25px;
 }
 
 .header-row {
 
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  padding: 50px;
+  margin: 0;
 }
 
 .content-row {
@@ -97,7 +203,20 @@
   color: #fff;
   justify-content: space-between;
   width: 100%;
+  overflow: hidden;
 }
+
+.short-desc {
+  font-size: 2em;
+  padding-left: 1em;
+  padding-bottom: 1.7em;
+  font-weight: 200;
+}
+
+/*.last-line {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}*/
 
 .Skill {
   display: inline-block;
@@ -108,41 +227,47 @@
 
 .skill_name {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .skill_version {
-  font-size: 1.05em;
-  margin-left: 0.3em;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.85em;
+  margin-left: 0.2em;
+  /*color: rgba(0, 0, 0, 0.6);*/
 }
 
 .skill_Fundamentals {
+  color: red;
   border: 2px solid;
   border-color: red;
 }
 
 .skill_Front-end {
+  color: green;
   border: 2px solid;
   border-color: green;
 }
 
 .skill_Design {
+  color: blue;
   border: 2px solid;
   border-color: blue;
 }
 
 .skill_Back-end {
+  color: orange;
   border: 2px solid;
   border-color: orange;
 }
 
 .skill_Database {
+  color: purple;
   border: 2px solid;
   border-color: purple;
 }
 
 .skill_Miscellaneous {
+  color: gray;
   border: 2px solid;
   border-color: gray;
 }
@@ -151,9 +276,24 @@
   margin-left: 0.7em;
 }
 
+.filter-text {
+  font-size: 0.4em;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 1em;
+  font-weight: 200;
+  text-transform: initial;
+  font-style: normal;
+}
+
+.Footer h1, .Header h1 {
+  color: #fff;
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 25px;
+  height: 277px;
 }
 
 .portfolio-container {
@@ -167,9 +307,11 @@
 }*/
 
 .Piece {
-  border: 2px solid black;
-  justify-content: center;
+  /*border: 2px solid black;*/
+  /*justify-content: center;*/
   align-items: center;
   padding: 1em;
-  height: 75px;
+  height: 68px;
+  display: flex;
+  font-weight: 200;
 }

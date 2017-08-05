@@ -14,10 +14,10 @@ class App extends Component {
           <Header />
         </div>
         <div className="app-row content-row">
-          <div className="col-half">
+          <div className="col-half col-half-one">
             <ContentOne />
           </div>
-          <div className="col-half">
+          <div className="col-half col-half-two">
             <ContentTwo />
           </div>
         </div>
