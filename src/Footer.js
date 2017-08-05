@@ -5,15 +5,45 @@ class Footer extends Component {
   constructor() {
     super();
     this.state = {
-      email: null
+      email: null,
+      collectedEmails: []
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.getLocalStorage = this.getLocalStorage.bind(this);
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    this.setState({email: event.target.email.value});
+
+    if(event.target.email.value !== "" && this.state.collectedEmails.indexOf(event.target.email.value) === -1) {
+      this.setState({email: event.target.email.value});
+      this.setLocalStorage("emails", event.target.email.value);
+
+      document.getElementById("email-input").value = "";
+    }
+
+    document.getElementById("email-input").value = "";
+  }
+
+  setLocalStorage(key, email) {
+    const collectedEmails = this.state.collectedEmails;
+
+    collectedEmails.push(email);
+
+    localStorage.setItem(key, JSON.stringify(collectedEmails));
+  }
+
+  getLocalStorage(key) {
+    const retrievedObject = localStorage.getItem(key);
+
+    if(retrievedObject !== null) {
+      this.setState({collectedEmails: JSON.parse(retrievedObject)});
+    }
+  }
+
+  componentDidMount() {
+    this.getLocalStorage("emails");
   }
 
   render() {
@@ -27,7 +57,7 @@ class Footer extends Component {
           <h1 className="resume-header">Free Resume!</h1>
           <p>Enter your email to receive a PDF resume! Limited time offer.</p>
           <form onSubmit={this.handleSubmit}>
-            <input type="text" name="email" placeholder="jdoe@gmail.com" className="form-control" />
+            <input id="email-input" type="email" name="email" placeholder="jdoe@gmail.com" className="form-control" />
             <input type="submit" className="btn btn-success" value="Send Me a Digital Copy of Yoon's Resume When You Get a Chance" />
           </form>
 
